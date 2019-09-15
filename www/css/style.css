@@ -1,0 +1,56 @@
+/* Empty. Add your own CSS if you like */
+.tituloPrincial{
+  text-shadow: 2px 2px #000 !important;
+  color:#fff !important;
+}
+ion-header-bar {
+    height: 5em !important;
+  /*
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,153,173,1) 32%, rgba(0,212,255,1) 80%) !important;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,153,173,1) 32%, rgba(0,212,255,1) 80%)  !important;
+*/
+    background: -webkit-linear-gradient(60deg, rgb(231, 69, 48) 0%, rgba(6,153,173,1) 32%, rgb(255, 252, 59) 80%)  !important;
+    box-shadow: -4px -2px 17px -3px #07315d !important;
+    border-bottom: 1px solid #44b9e2 !important;
+    margin-bottom: 2em !important;
+  }
+  .bar.bar-stable .title {
+    color: #fff !important;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.itens-principal{
+    text-align: center !important;
+    border: 1px solid #083f9c !important;
+    width: 80vw;
+    margin-left: 10%;
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    box-shadow: -2px 3px 5px 0px rgba(199,200,201,1);
+    animation-name: fadein;
+    animation-delay: 2s;
+
+}
+ion-view{
+  background: -webkit-linear-gradient(60deg, rgba(91, 91, 92, 0.451) 0%, rgba(54, 61, 61, 0.698) 80%);
+    /*
+    background-color: rgb(239, 241, 247) !important; 
+    background-image: url(../img/lgd4.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    */
+ }
+.list{
+  margin-top: 2em !important;
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,45 @@
+<ion-view view-title="Unidade">
+        <ion-content>
+            <h3>Unidade</h3>
+            <ion-list show-delete="permitirExcluir">
+                <ion-item class="item item-button-right"  ng-repeat="unidade in unidades" href="#/und/{{unidades.indexOf(unidade)}}">
+                    <ion-delete-button class="ion-close-circled" ng-click="excluirDbv(dbv)"></ion-delete-button>
+                        {{unidade.nome}}
+                    </ion-item>
+            </ion-list>
+          
+            <script id="calebe.html" type="text/ng-template">
+                <ion-modal-view>
+                  <ion-header-bar>
+                    <h1 class="title">Apontamentos</h1>
+                  </ion-header-bar>
+                  <ion-content>
+                    <form>
+                      <div class="list">
+                              <label class="item item-input item-stacked-label">
+                                <span class="input-label">Presença</span>
+                                <input type="text"  placeholder="Nome" ng-model="desbravador.nome">
+                              </label>
+                              <label class="item item-input item-stacked-label">
+                                <span class="input-label">Tarefas</span>
+                                <input type="text"  placeholder="feitas/total" ng-model="desbravador.idade">
+                              </label>
+                              <div class="row">
+                                <div class="col col-50">
+                                    <button class="button button-assertive button-block" ng-click="fecharTelaContato()">
+                                        Sair
+                                      </button>
+                                </div>
+                                <div class="col col-50">
+                                    <button class="button button-positive button-block" ng-click="salvarContato()">
+                                        cadastrar
+                                      </button>
+                                </div>
+                              </div> 
+                            </div>
+                    </form>
+                  </ion-content>
+                </ion-modal-view>
+              </script>
+        </ion-content>
+</ion-view>

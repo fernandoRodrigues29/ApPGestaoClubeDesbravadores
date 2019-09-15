@@ -1,0 +1,112 @@
+.caixa-principal{
+    height: 35vh;
+    margin-bottom: 2vh;
+    border-radius: 5%;
+    background-color: #2e0788;
+    background: -webkit-linear-gradient(60deg, rgba(4, 243, 4, 0.525) 0%, rgba(14, 3, 110, 0.631) 80%),
+    url(../img/lgd4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6vh;
+}
+
+.caixa-principal .icon{
+   font-size: 5em;
+    color: #fff;
+    position: relative;
+ }
+.caixa-principal .titulo_card_principal{
+    position: relative;
+    top: 10px;
+   color: #fff;
+   font-size: 25px;
+}
+.caixa-principal .sub_titulo{
+    color:#fff;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+.caixa-principal p{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: #fff;
+ }
+.caixa{
+    margin-bottom: 10px;
+    text-align: center;
+    height: 25vh;
+    padding: 24px;
+    margin: 2px;
+}
+.caixa .titulo_card_principal{
+    position: relative;
+    top: 10px;
+   color: #fff;
+   font-size: 25px;
+}
+.caixa .sub_titulo{
+    color:#fff;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.caixa .icon{
+    font-size: 3em;
+     color: #fff;
+     position: relative;
+  }
+.evidencia1{
+    border:1px solid #075988;
+    background: -webkit-linear-gradient(60deg, rgba(200, 233, 13, 0.525) 0%, rgba(100, 110, 3, 0.631) 80%),
+    url(../img/fundo03.jpg);      
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+.evidencia2{
+    border:1px solid #075988;
+    background: -webkit-linear-gradient(60deg, rgba(131, 1, 1, 0.451) 0%, rgba(204, 52, 14, 0.698) 80%),
+    url(../img/fundo02.jpg);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+.evidencia3{
+    border:1px solid #075988;
+    background: -webkit-linear-gradient(60deg, rgba(2, 109, 64, 0.451) 0%, rgba(34, 73, 18, 0.698) 80%),
+    url(../img/fundo04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+.evidencia4{
+    border:1px solid #075988;
+   background: -webkit-linear-gradient(60deg, rgba(2, 109, 64, 0.451) 0%, rgba(199, 179, 2, 0.659) 80%),
+    url(../img/fundo04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+}
+.degarde{
+    background: -webkit-linear-gradient(60deg, rgba(230, 70, 49, 0.451) 0%, rgba(255, 251, 61, 0.502) 80%),
+    url(../img/lgd4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagem_back{
+    background-image: url(../img/lgd4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

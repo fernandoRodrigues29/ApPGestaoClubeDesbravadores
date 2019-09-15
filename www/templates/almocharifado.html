@@ -1,0 +1,93 @@
+<ion-view view-title="Almocharifado">
+    
+    <ion-content>
+      <ion-list show-delete="permitirExcluir">
+        <ion-item class="item item-button-right"  ng-repeat="item in listaAlmocharifado" ng-click="editarFormulario(item,listaAlmocharifado.indexOf(item))">
+         <ion-delete-button class="ion-close-circled" ng-click="excluirAlmocharifado(item)"></ion-delete-button>
+          {{item.item}}
+        </ion-item>
+       </ion-list> 
+  
+      <button class="button button-positive button-block" ng-click="abirFormulario()">novo</button>
+      <button class="button button-assertive button-block" ng-click="btnPermitirExcluir()">Excluir</button>
+      <a class="button  button-calm button-block"href="#/p">Principal</a>
+      <button class="button button-block button-royal" ng-click="funcaoGerarRelatorio()">
+          Gerar Relatorio
+      </button>
+      <script id="formAlmocharifado.html" type="text/ng-template">
+              <ion-modal-view>
+                <ion-header-bar>
+                  <h1 class="title">Cadastro</h1>
+                </ion-header-bar>
+                <ion-content>
+                  <form>
+                    <div class="list">
+                            <label class="item item-input item-stacked-label">
+                              <span class="input-label">Item</span>
+                              <input type="text"  placeholder="Nome" ng-model="itemNoAlmocharifado.item">
+                            </label>
+                            <label class="item item-input item-stacked-label">
+                              <span class="input-label">Descrição</span>
+                              <input type="text"  placeholder="Descrição" ng-model="itemNoAlmocharifado.descricao">
+                            </label>                            
+                            <label class="item item-input item-stacked-label">
+                              <span class="input-label">Quantidade</span>
+                              <input type="number"  placeholder="Quantidade" ng-model="itemNoAlmocharifado.quantidade">
+                            </label>
+                            <div class="row">
+                              <div class="col col-50">
+                                  <button class="button button-assertive button-block" ng-click="fecharFormulario()">
+                                      Sair
+                                    </button>
+                              </div>
+                              <div class="col col-50">
+                                  <button class="button button-positive button-block" ng-click="salvarItem(itemNoAlmocharifado)">
+                                      cadastrar
+                                    </button>
+                              </div>
+                            </div> 
+                          </div>
+                  </form>
+                </ion-content>
+              </ion-modal-view>
+            </script>
+          <!--editar formulario-->
+          <script id="formAlmocharifadoEditar.html" type="text/ng-template">
+            <ion-modal-view>
+              <ion-header-bar>
+                <h1 class="title">Editar</h1>
+              </ion-header-bar>
+              <ion-content>
+                <form>
+                  <div class="list">
+                          <label class="item item-input item-stacked-label">
+                            <span class="input-label">Item</span>
+                            <input type="text"  placeholder="Nome" ng-model="itemNoAlmocharifado.item">
+                          </label>
+                          <label class="item item-input item-stacked-label">
+                            <span class="input-label">Descrição</span>
+                            <input type="text"  placeholder="Descrição" ng-model="itemNoAlmocharifado.descricao">
+                          </label>                            
+                          <label class="item item-input item-stacked-label">
+                            <span class="input-label">Quantidade</span>
+                            <input type="number"  placeholder="Quantidade" ng-model="itemNoAlmocharifado.quantidade">
+                          </label>
+                          <div class="row">
+                            <div class="col col-50">
+                                <button class="button button-assertive button-block" ng-click="fecharModal2()">
+                                    Sair
+                                  </button>
+                            </div>
+                            <div class="col col-50">
+                                <button class="button button-positive button-block" ng-click="AtualizarItem(itemNoAlmocharifado)">
+                                    Atualizar
+                                  </button>
+                            </div>
+                          </div> 
+                        </div>
+                </form>
+              </ion-content>
+            </ion-modal-view>
+          </script>            
+    </ion-content>
+  </ion-view>
